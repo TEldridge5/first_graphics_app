@@ -5,6 +5,9 @@
 
 rect {
   fill: #86c7df;
+  &:hover {
+    fill: #2ab2e4;
+  }
 }
 
 .y .domain {
