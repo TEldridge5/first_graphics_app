@@ -2,7 +2,7 @@
 
 {% import "_modules/link/link.nunjucks" as link %}
 
-{% block headline %}This is my headline{% endblock %}
+{% block headline %}A South L.A. neighborhood grapples with a wave of violence{% endblock %}
 {% block byline %}By Taylor Eldridge {% endblock %} 
 {% block pubdate %} <time datetime=
 "2020-03-07" pubdate>
@@ -10,6 +10,11 @@ March 7th 2020 </time>
 {% endblock %}
 
 {% block content%}
+
+<h3>One corner. Four killings</h3>
+<div id="map"></div>
+
+
 <h3> A South L.A. neighborhood stands apart </h3>
 <p>Harvard Park's 2016 homicide total was its highest in at least 15 years despite a downward trend in killings across L.A. County.</p>
 
