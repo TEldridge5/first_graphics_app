@@ -2,9 +2,11 @@ import * as L from "leaflet";
 import homicides from "../_data/harvard_park_homicides.json";
 import MiniMap from "leaflet-minimap";
 
-var map = L.map("map");
+var map = L.map("map", {scrollWheelZoom: false});
 var sat = L.tileLayer(
-  "https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v9/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibGF0aW1lcyIsImEiOiJjanJmNjg4ZzYweGtvNDNxa2ZpZ2lma3Z4In0.g0lYVIEs9Y5QcUOhXactHA"
+  "https://api.mapbox.com/styles/v1/mapbox/satellite-streets-v9/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibGF0aW1lcyIsImEiOiJjanJmNjg4ZzYweGtvNDNxa2ZpZ2lma3Z4In0.g0lYVIEs9Y5QcUOhXactHA",{
+  	miniZoom: 9
+  }
 );
 sat.addTo(map);
 map.setView([33.983265, -118.306799], 18);
